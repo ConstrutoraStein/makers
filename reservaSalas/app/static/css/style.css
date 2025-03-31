@@ -1,0 +1,128 @@
+/* Estilos personalizados para o sistema de reserva de salas */
+
+/* Cores e Variáveis Personalizadas */
+:root {
+    --primary: #4e73df;
+    --primary-dark: #3a56c5;
+    --secondary: #6c757d;
+    --success: #1cc88a;
+    --info: #36b9cc;
+    --warning: #f6c23e;
+    --danger: #e74a3b;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fc;
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(180deg, var(--primary) 10%, var(--primary-dark) 100%);
+}
+
+/* Dashboard */
+.card {
+    border: none;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+}
+
+.card .card-header {
+    font-weight: 700;
+}
+
+.border-left-primary {
+    border-left: 0.25rem solid var(--primary) !important;
+}
+
+.border-left-success {
+    border-left: 0.25rem solid var(--success) !important;
+}
+
+.border-left-info {
+    border-left: 0.25rem solid var(--info) !important;
+}
+
+.border-left-warning {
+    border-left: 0.25rem solid var(--warning) !important;
+}
+
+.border-left-danger {
+    border-left: 0.25rem solid var(--danger) !important;
+}
+
+.text-xs {
+    font-size: .7rem;
+}
+
+.text-gray-300 {
+    color: #dddfeb !important;
+}
+
+/* Login */
+.vh-100 {
+    height: 100vh !important;
+}
+
+/* Calendário */
+#calendar {
+    height: 600px;
+}
+
+@media (max-width: 768px) {
+    #calendar {
+        height: 500px;
+    }
+}
+
+/* Formulário de Reserva */
+.form-label {
+    font-weight: 600;
+}
+
+/* Customização do DataTables */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: var(--primary) !important;
+    color: white !important;
+    border-color: var(--primary) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: var(--primary-dark) !important;
+    color: white !important;
+    border-color: var(--primary-dark) !important;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .h5 {
+        font-size: 1rem;
+    }
+    
+    .container-fluid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* Animações */
+.btn-primary {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 115, 223, 0.3);
+}
+
+/* Página de autenticação */
+.auth-card {
+    max-width: 450px;
+    margin: 0 auto;
+} 
